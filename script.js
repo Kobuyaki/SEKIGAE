@@ -45,7 +45,7 @@ function DRAW(){
         if(i.classList.contains("blue")){
             i.classList.remove("blue");
         }
-        if(BOYS.includes(changed[index + 1])){
+        if(BOYS.includes(changed[index])){
             i.classList.add("blue");
         }
     })
@@ -88,4 +88,19 @@ button.addEventListener('click' , () =>{
         MOVEseat();
     }
     
+})
+
+box.forEach((i , index)=>{
+    i.addEventListener('click' , () =>{
+        if(changing == 0 && changed[index] != -1){
+            console.log(changed[index])
+            if(BOYS.includes(changed[index])){
+                BOYS.splice(BOYS.indexOf(changed[index])  , 1);
+            }else{
+                BOYS.push(changed[index]);
+            }
+            console.log(BOYS);
+            DRAW();
+        }
+    })
 })
