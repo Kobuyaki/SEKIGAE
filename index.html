@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>席替え</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="grid-container" id="grid"></div>
+
+    <script>
+        const container = document.getElementById('grid');
+        for (let i = 0; i < 42; i++) {
+          const div = document.createElement('div');
+          div.className = 'box';
+          div.innerHTML = '<span class = "text">1</span>';
+
+          container.appendChild(div);
+        }
+    </script>
+    <div class="change__div"><button class="change__button">席替え！</button></div>
+</body>
+</html>

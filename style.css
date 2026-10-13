@@ -1,0 +1,62 @@
+.box {
+      background-color: #ffadad;
+      aspect-ratio: 1 / 1;
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: black;
+      font-weight: bold;
+      font-size: 14px;
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.2s;
+      opacity: 1;
+}
+span{
+    text-align: right;
+}
+
+.grid-container {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(7, 1fr);
+      gap: 1px;
+      @media screen and (max-width:480px) {
+            max-width: 300px;
+      }
+      @media screen and (min-width:480px) {
+            max-width: 400px;
+            margin: 0 auto;
+      }
+}
+
+.text{
+      text-align: center;
+}
+
+.NOseat{
+      opacity: 0;
+}
+
+.change__button{
+      background-color: rgb(36, 178, 243);
+      padding: 10px;
+      border-radius: 4px;
+      color: white;
+      cursor: pointer;
+      border: none;
+      position: relative;
+}
+
+.change__div{
+      margin-top: 10px;
+      text-align: center;
+}
+
+.blue{
+      background-color: rgb(134, 193, 255);
+}
+
+.MARGIN{
+      margin-right: 20px;
+}
